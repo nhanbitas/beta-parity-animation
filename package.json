@@ -1,0 +1,35 @@
+{
+    "name": "beta-parity-animation",
+    "version": "0.1.0",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "webpack --mode production",
+        "dev": "webpack --mode development --watch",
+        "type-check": "tsc --noEmit",
+        "lint": "eslint src/**/*.{ts,tsx}",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-dom": ">=16.8.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.0",
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
+        "@typescript-eslint/parser": "^5.0.0",
+        "css-loader": "^6.8.1",
+        "eslint": "^8.0.0",
+        "mini-css-extract-plugin": "^2.7.6",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "ts-loader": "^9.4.4",
+        "typescript": "^4.9.0",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
+    }
+}
